@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO GAME</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body onclick="input.focus()">
+    <div onclick="input.focus()">
+        <div class="console" id="guide">
+            Welcome to UNO GAME
+            <br>
+            <span class="stress">Guide:</span>
+            <br>
+            ~<span class="info">new</span>: <span class="content">Create a new game and invite other players</span>
+            <br>
+            ~<span class="info">join</span>: <span class="content">Join games of others</span>
+        </div>
+        
+        <div class="console" id="status">
+            <span class="stress">Player Status:</span> <br>
+            <span class="content">Waiting For Joining...</span>
+        </div>
+        <div class="console" id="messageBox">
+            <span class="stress">Messages:</span><br>
+            <span id="messageSlot"></span>
+        </div>
+        <div  class="console" id ="cards" style="display: none;">
+            <span class="stress">Your Card:</span> <br>
+            <span class="content"></span>
+        </div>
+        
+        <input class="console" id="input" placeholder="Command">
+        
+    </div>
+    
+
+    <script src="./src/main.js"></script>
+    <script src="./src/handleCommand.js"></script>
+    <script src="./src/kit.js"></script>
+    <script src="./src/frame.js"></script>
+</body>
+
+
+
+</html>
